@@ -7,11 +7,12 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="Một lá thư nhỏ anh viết cho em.">
   <title>Một lá thư gửi em ♡</title>
-  <link rel="stylesheet" href="./style.css?v=3">
-  <script src="./script.js?v=3" defer></script>
+  <link rel="stylesheet" href="./style.css?v=4">
+  <script src="./script.js?v=4" defer></script>
 </head>
 <body>
   <main class="page">
+    <canvas class="universe-canvas" aria-hidden="true"></canvas>
     <div class="sparkles" aria-hidden="true"><span>✦</span><span>✧</span><span>♡</span><span>✦</span><span>✧</span></div>
     <section class="card cover" id="cover" aria-labelledby="cover-title">
       <div class="cover-art" aria-hidden="true">
@@ -47,22 +48,23 @@
     </section>
 
     <section class="card proposal" id="question" aria-labelledby="question-title" hidden>
-      <img class="proposal-cat" src="./meo-trai-tim.webp" width="384" height="384" alt="">
-      <h2 id="question-title" tabindex="-1">Khánh Ly, <em>làm bạn gái anh nha?</em></h2>
+      <div class="proposal-ring" aria-hidden="true"><span></span></div>
+      <h2 id="question-title" tabindex="-1">Làm người yêu <em>anh nhé?</em></h2>
       <div class="proposal-actions">
-        <button class="button proposal-yes" type="button" id="yes">Yes <span aria-hidden="true">♥</span></button>
+        <button class="button proposal-yes" type="button" id="yes">Có chứ <span aria-hidden="true">♥</span></button>
         <button class="button proposal-no" type="button" id="no">No</button>
       </div>
       <p class="proposal-note" id="proposal-note" role="status"></p>
       <button class="proposal-back" type="button" id="back-to-letter">Quay lại lá thư</button>
     </section>
 
-    <section class="card letter" id="ending" data-celebration aria-labelledby="ending-title" hidden>
-      <p class="letter-mark" aria-hidden="true">♡</p>
-      <h2 id="ending-title" tabindex="-1">Anh yêu em, Khánh Ly ♡</h2>
-      <p>Anh vui lắm. Khi nào em rảnh, anh mời em một buổi hẹn nhé. Em chọn món mình ăn, còn anh sẽ mang theo lá thư này để đọc cho em nghe.</p>
-      <button class="button secondary" type="button" id="restart">Đọc thư lại</button>
-      <p class="sender">Khánh Duy</p>
+    <section class="card universe-finale" id="ending" aria-labelledby="ending-title" hidden>
+      <div class="universe-glow" aria-hidden="true"></div>
+      <div class="universe-copy">
+        <h2 id="ending-title" tabindex="-1">Vũ trụ là của chúng mình</h2>
+        <p class="universe-dedication">Anh yêu em, Khánh Ly <span aria-hidden="true">✦</span></p>
+        <button class="universe-replay" type="button" id="restart">Đọc thư lại</button>
+      </div>
     </section>
   </main>
 </body>
