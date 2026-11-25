@@ -7,8 +7,8 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="Một lá thư nhỏ anh viết cho em.">
   <title>Một lá thư gửi em ♡</title>
-  <link rel="stylesheet" href="./style.css?v=2">
-  <script src="./script.js?v=2" defer></script>
+  <link rel="stylesheet" href="./style.css?v=3">
+  <script src="./script.js?v=3" defer></script>
 </head>
 <body>
   <main class="page">
@@ -46,34 +46,21 @@
       <p class="sender">Khánh Duy</p>
     </section>
 
-    <section class="card letter" id="question" aria-labelledby="question-title" hidden>
-      <p class="letter-mark" aria-hidden="true">♡</p>
-      <h2 id="question-title" tabindex="-1">Em có muốn cùng anh <em>viết tiếp chuyện của hai đứa mình không?</em></h2>
-      <p>Em cứ trả lời theo điều em thật sự muốn nhé. Anh muốn nghe em.</p>
-      <div class="actions">
-        <button class="button primary" type="button" id="yes">Yêu ơi là yêu <span aria-hidden="true">♡</span></button>
-        <button class="button secondary" type="button" id="later">Cho em nghĩ thêm nha</button>
+    <section class="card proposal" id="question" aria-labelledby="question-title" hidden>
+      <img class="proposal-cat" src="./meo-trai-tim.webp" width="384" height="384" alt="">
+      <h2 id="question-title" tabindex="-1">Khánh Ly, <em>làm bạn gái anh nha?</em></h2>
+      <div class="proposal-actions">
+        <button class="button proposal-yes" type="button" id="yes">Yes <span aria-hidden="true">♥</span></button>
+        <button class="button proposal-no" type="button" id="no">No</button>
       </div>
-      <p class="sender">Khánh Duy</p>
+      <p class="proposal-note" id="proposal-note" role="status"></p>
+      <button class="proposal-back" type="button" id="back-to-letter">Quay lại lá thư</button>
     </section>
 
-    <section class="card letter" id="reply" aria-labelledby="reply-title" hidden>
+    <section class="card letter" id="ending" data-celebration aria-labelledby="ending-title" hidden>
       <p class="letter-mark" aria-hidden="true">♡</p>
-      <h2 id="reply-title" tabindex="-1">Điều <em>em muốn nói</em></h2>
-      <label for="message">Em muốn nói với anh điều gì nè?</label>
-      <textarea id="message" rows="3" maxlength="1200" placeholder="Viết vài dòng cho anh…"></textarea>
-      <div class="actions">
-        <button class="button primary" type="button" id="copy">Sao chép lời nhắn</button>
-        <button class="button secondary" type="button" id="skip">Thôi, em ngại lắm</button>
-      </div>
-      <p class="hint" id="copy-status" role="status">Em có thể dán lời nhắn vào cuộc trò chuyện với anh.</p>
-    </section>
-
-    <section class="card letter" id="ending" aria-labelledby="ending-title" hidden>
-      <p class="letter-mark" aria-hidden="true">♡</p>
-      <h2 id="ending-title" tabindex="-1"></h2>
-      <p id="ending-text"></p>
-      <p class="hint" id="ending-hint" hidden>Lời nhắn đã được sao chép. Em có thể dán vào cuộc trò chuyện với anh nhé.</p>
+      <h2 id="ending-title" tabindex="-1">Anh yêu em, Khánh Ly ♡</h2>
+      <p>Anh vui lắm. Khi nào em rảnh, anh mời em một buổi hẹn nhé. Em chọn món mình ăn, còn anh sẽ mang theo lá thư này để đọc cho em nghe.</p>
       <button class="button secondary" type="button" id="restart">Đọc thư lại</button>
       <p class="sender">Khánh Duy</p>
     </section>
