@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#351824">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Một lá thư nhỏ anh viết cho em.">
+  <title>Một lá thư gửi em ♡</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <div class="sparkles" aria-hidden="true"><span>✦</span><span>✧</span><span>♡</span><span>✦</span><span>✧</span></div>
+    <section class="card cover" id="cover" aria-labelledby="cover-title">
+      <div class="cover-art" aria-hidden="true">
+        <div class="portrait"><img src="./meo.jpg" alt="" width="680" height="680"></div>
+        <span class="seal">♡</span>
+      </div>
+      <div class="cover-copy">
+        <p class="eyebrow">Gửi Khánh Ly</p>
+        <h1 id="cover-title"><span class="first-name">Khánh Ly</span> <em>ơi!</em></h1>
+        <p>Anh có điều này muốn hỏi em. Đọc thư của anh nha?</p>
+        <button class="button primary" type="button" id="open">Mở thư của anh <span aria-hidden="true">♡</span></button>
+        <p class="sender">Khánh Duy</p>
+      </div>
+    </section>
+
+    <section class="card letter" id="question" aria-labelledby="question-title" hidden>
+      <p class="letter-mark" aria-hidden="true">♡</p>
+      <h2 id="question-title" tabindex="-1">Em yêu anh,<br><em>có phải không nào?</em></h2>
+      <p>Anh thích em, Khánh Ly à. Anh muốn được quan tâm em, nghe em kể chuyện và cùng em có thêm thật nhiều ngày vui.</p>
+      <div class="actions">
+        <button class="button primary" type="button" id="yes">Yêu ơi là yêu <span aria-hidden="true">♡</span></button>
+        <button class="button secondary" type="button" id="later">Cho em nghĩ thêm nha</button>
+      </div>
+      <p class="sender">Khánh Duy</p>
+    </section>
+
+    <section class="card letter" id="reply" aria-labelledby="reply-title" hidden>
+      <p class="letter-mark" aria-hidden="true">♡</p>
+      <h2 id="reply-title" tabindex="-1">Điều <em>em muốn nói</em></h2>
+      <label for="message">Em muốn nói với anh điều gì nè?</label>
+      <textarea id="message" rows="3" maxlength="1200" placeholder="Viết vài dòng cho anh…"></textarea>
+      <div class="actions">
+        <button class="button primary" type="button" id="copy">Sao chép lời nhắn</button>
+        <button class="button secondary" type="button" id="skip">Thôi, em ngại lắm</button>
+      </div>
+      <p class="hint" id="copy-status" role="status">Em có thể dán lời nhắn vào cuộc trò chuyện với anh.</p>
+    </section>
+
+    <section class="card letter" id="ending" aria-labelledby="ending-title" hidden>
+      <p class="letter-mark" aria-hidden="true">♡</p>
+      <h2 id="ending-title" tabindex="-1"></h2>
+      <p id="ending-text"></p>
+      <p class="hint" id="ending-hint" hidden>Lời nhắn đã được sao chép. Em có thể dán vào cuộc trò chuyện với anh nhé.</p>
+      <button class="button secondary" type="button" id="restart">Đọc thư lại</button>
+      <p class="sender">Khánh Duy</p>
+    </section>
+  </main>
+</body>
+</html>
